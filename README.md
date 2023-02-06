@@ -4,7 +4,7 @@ The repository demonstrates the approach to building extendable Jenkins pipeline
 
 ## Use case
 
-Let's suppose in our team we have some [tool that requires quite complex CI/CD pipeline]().
+Let's suppose in our team we have some [tool that requires quite complex CI/CD pipeline](https://github.com/DarthKurt/jenkins-extendable-pipeline-sample).
 The tool is developed in the monorepository.
 
 The team uses the declarative approach because this one suits their scenario better. That setup makes the whole pipeline declaration big and complex and at some point of complexity team faces one or more of the issues:
@@ -39,7 +39,7 @@ With that approach the high-level algorithm of some pipeline could be like that:
 
 1. Jenkins job run interprets Jenkinsfile.
 2. Jenkins job loads this global shared library containing our Dynamic Library Accessor class.
-3. Dynamic Library Accessor loads Jenkins Shared library dinamically [from tool repository]().
+3. Dynamic Library Accessor loads Jenkins Shared library dinamically [from tool repository](https://github.com/DarthKurt/jenkins-extendable-pipeline-sample/tree/main/pipeline/jenkins).
 4. Jenkins job starts one of the declarative pipelines with theirs components from the library loaded on the previous step using entry point function from the library.
 
 ```mermaid
