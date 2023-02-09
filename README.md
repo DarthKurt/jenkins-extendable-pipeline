@@ -31,7 +31,7 @@ See some additional discussions on that topic: [SO answer](https://stackoverflow
 
 ## Load library: on-the-fly-solution
 
-Here we create a small shared library for Jenkins that could be used in many Jenkins setups. It provides a class that loads a components library from a subfolder from the same repository which is going to be processed.
+Here we create a small shared library for Jenkins that could be used in many Jenkins setups. It provides a class that loads components library from a subfolder of the same repository which is going to be processed.
 
 ## High-level algorithm
 
